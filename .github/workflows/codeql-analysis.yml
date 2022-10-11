@@ -69,8 +69,8 @@ jobs:
           distribution: 'temurin'
           java-version: 17
           architecture: x64
-    - name: Test with Maven
-      run: mvn --no-transfer-progress verifyy
+    - name: Build with Maven
+      run: mvn package
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
